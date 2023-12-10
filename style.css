@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    position: absolute;
+    
+}
+.card {
+    display: flex;
+    max-width: 800px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px lightblue;
+    margin: 50px;
+    padding: 20px;
+    background-color: lightseagreen;
+    position: relative;
+    
+    
+}
+.card img {
+    width: 100%;
+    height: auto;
+    
+}
+.main-img {
+    scale: 1.5;
+}
+
+.card h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.options {
+    width: 250px;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.content {
+    padding-left: 400px;
+    padding-right: 50px;
+}
+.content-text {
+    text-align: justify;
+}
+button {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid violet;
+    border-radius: 5px;
+    background-color: violet;
+    color: azure;
+}
+button:hover {
+    background-color: lightyellow;
+    color: blueviolet;
+}
+.btn {
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+}
+.pictures {
+    background-color: lightblue;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    right: 430px;   
+    border-radius: 5px;
+}
+.variant {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    margin-top: 100px;
+    align-items: baseline;
+    
+}
+.description {
+    background-color: lightcyan;
+}
