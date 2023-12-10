@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "prodact-card",
+			"path": "."
+		},
+		{
+			"name": "image",
+			"path": "../../Desktop/image"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "prodact-card"
+	}
+}

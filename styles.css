@@ -1,92 +1,159 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    position: absolute;
-    
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  position: absolute;
 }
 .card {
-    display: flex;
-    max-width: 800px;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 10px 10px 5px lightblue;
-    margin: 50px;
-    padding: 20px;
-    background-color: lightseagreen;
-    position: relative;
-    
-    
+  display: flex;
+  max-width: 800px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 10px 10px 6px lightblue;
+  margin: 50px;
+  padding: 20px;
+  background-color: lightseagreen;
+  position: relative;
 }
 .card img {
-    width: 100%;
-    height: auto;
-    
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
 }
 .main-img {
     scale: 1.5;
 }
-
+.main-img:hover, :focus {
+    scale: 1.6;
+    transition-duration: 2s;
+}
 .card h2 {
-    margin-top: 50px;
-    margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 .options {
-    width: 250px;
-    gap: 25px;
-    margin-bottom: 20px;
+  width: 250px;
+  gap: 25px;
+  margin-bottom: 20px;
+  color: violet;
 }
 .content {
-    padding-left: 400px;
-    padding-right: 50px;
+  padding-left: 400px;
+  padding-right: 50px;
 }
 .content-text {
-    text-align: justify;
+  text-align: justify;
 }
 button {
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 2px solid violet;
-    border-radius: 5px;
-    background-color: violet;
-    color: azure;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid violet;
+  border-radius: 5px;
+  background-color: violet;
+  color: white;
+  box-shadow: 0 0 0 0 lightcoral;
+  outline: 2px solid;
+  outline-color: white;
+  outline-offset: 0px;
+  text-shadow: none;
+  font-size: medium;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  transition: all 550ms cubic-bezier(0.36, 0.63, 0.5, 0.73);
 }
-button:hover {
-    background-color: lightyellow;
-    color: blueviolet;
+button:hover,
+:focus {
+  background-color: hotpink;
+  color: blueviolet;
+  box-shadow: 0 0 0 2px violet;
+  outline-color: violet;
+  outline-offset: 15px;
+  border: none;
 }
 .btn {
-    display: flex;
-    justify-content: end;
-    padding-right: 50px;
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
 }
 .pictures {
-    background-color: lightblue;
-    padding: 10px;
-    position: absolute;
-    top: 100px;
-    right: 430px;   
-    border-radius: 5px;
-}
+  background-color: lightseagreen;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  right: 430px;
+  border-radius: 5px;
+  margin-left: 30px;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
+  box-shadow: 10px 10px 6px lightblue;
+} 
 .variant {
-    display: flex;
-    width: 150px;
-    height: 100px;
-    margin-top: 100px;
-    align-items: baseline;
-    
+  display: flex;
+  justify-items: center;
+  gap: 20px;
+  width: 150px;
+  height: 100px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+ 
+} 
+.variant img:hover {
+    border: 1px solid violet;
+    border-radius: 5px;
+    transition: opacity 0.4s ease-in-out;
+    background-color: hotpink;
+    box-shadow: 5px 2px 2px lightblue;
 }
 .description {
-    background-color: lightcyan;
+  background-color: lightcyan;
+}
+@media screen and (max-width: 767px) {
+    .card {
+        max-width: 90%; 
+        margin: 20px; 
+        padding: 10px; 
+      }
+      .content {
+        padding-left: 20px; 
+        padding-right: 20px;
+        margin-top: 430px;
+      }
+      .pictures {
+        right: 0px;
+        margin-left: 0px;
+        
+      }
+      .variant {
+        width: 100px; 
+        height: 70px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+      .variant img:hover {
+        box-shadow: 3px 1px 1px lightblue;
+      }
+}
+@media screen and (min-width: 768px) {
+    .pictures{
+        right: 400px;
+        top: 150px;
+    }
+    .variant {
+        gap: 0;
+    }
 }
